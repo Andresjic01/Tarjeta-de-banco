@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main>
+    <section>
+      <div id="imagen">
+        <!-- <img src="images/bg-main-desktop.png" alt=""> -->
+      </div>
+  
+      <div id="front">
+        <img src="images/card-logo.svg" alt="">
+        <h5 id="tarjetau">0000 0000 0000 0000</h5>
+        <div id="name">
+          <p id="nombreu">Jane Appleseed</p>
+          <p id="fecha">00/00</p>
+        </div>
+      </div>
+  
+      <div id="back">
+        <p id="cvcu">000</p>
+      </div>
+
+      <div id="form">
+        <label for="">CARDHOLDER NAME</label>
+        <input id="names" type="text" placeholder="e.g. Jane Appleseed">
+        <h6 id="nombremal" class="activar">No puede estar vacio</h6>
+        <label for="">CARD NUMBER</label>
+        <input id="number" type="text" placeholder="e.g. 1234 5678 9123 0000">
+        <h6 id="nombremal1" class="activar">No puede estar vacio</h6>
+        <div style="display: flex; justify-content: space-between;">
+          <div>
+            <label for="">EXP. DATE(MM/YY)</label>
+            <div>
+              <input id="date1" type="text" placeholder="MM">
+              <input id="date2" type="text" placeholder=" YY">
+              <h6 id="nombremal2" class="activar">No puede estar vacio</h6>
+            </div>
+          </div>
+        
+          <div style="display: flex; flex-direction: column;">
+            <label for="">CVC</label>
+            <input id="cvc" type="text" placeholder="e.g. 123">
+            <h6 id="nombremal3" class="activar">No puede estar vacio</h6>
+          </div>
+        </div>
+        <button onclick="nombres()">Confirm</button>
+      </div>
+    </section>
+  </main>
+  
+
+  
+
+  <!-- Completed state start -->
+
+  <!-- Thank you!
+  We've added your card details
+  Continue -->
+  
+  <script src="js/main.js"></script>
+</body>
+</html>
